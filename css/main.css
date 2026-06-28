@@ -1168,6 +1168,10 @@ textarea {
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+
+/* Mobile tagline — hidden on desktop, shown only on mobile */
+.hero-mobile-tagline { display: none; }
+
 @media (max-width: 900px) {
   :root { --nav-h: 60px; }
 
@@ -1219,32 +1223,65 @@ textarea {
 @media (max-width: 600px) {
   .container { padding: 0 1.5rem; }
 
-  /* Hero — taller on mobile so images breathe, crop from center */
+  /* Hero — sized to landscape image proportions, no zoom */
   .hero {
-    height: 85vh;
-    min-height: 520px;
-    max-height: 700px;
+    height: 56vw;
+    min-height: 200px;
+    max-height: 320px;
   }
 
   .hero-slide img {
+    object-fit: contain;
     object-position: center center;
+    background: #1a1a18;
   }
 
-  .hero-content {
-    padding: 0 1.5rem 5rem;
+  /* Hide overlaid content — too cluttered at this size */
+  .hero-content { display: none; }
+  .hero-proj-label { display: none; }
+  .hero-scroll { display: none; }
+
+  /* Mobile tagline block — sits directly below hero */
+  .hero-mobile-tagline {
+    display: block;
+    background: #1a1a18;
+    padding: 1.25rem 1.5rem 1.5rem;
   }
 
-  /* Move indicators up slightly on mobile */
+  .hero-mobile-tagline h2 {
+    font-family: var(--f-display);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    line-height: 1.15;
+    margin-bottom: 0.9rem;
+  }
+
+  .hero-mobile-tagline h2 span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.2rem;
+  }
+
+  .hero-mobile-tagline a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.70);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    padding-bottom: 2px;
+  }
+
   .hero-indicators {
-    bottom: 2rem;
-  }
-
-  .hero-proj-label {
-    display: none;
-  }
-
-  .hero-scroll {
-    display: none;
+    bottom: 0.5rem;
   }
 
   .portfolio-grid { grid-template-columns: 1fr; }
