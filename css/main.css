@@ -63,7 +63,7 @@ a { text-decoration: none; color: inherit; }
 
 .label-tag {
   font-family: var(--f-sans);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -469,7 +469,7 @@ a { text-decoration: none; color: inherit; }
    §2 BRAND STATEMENT
    ============================================================ */
 .brand-statement {
-  padding: var(--sp-xl) 0;
+  padding: var(--sp-lg) 0 var(--sp-xl);
   background: var(--c-bg);
 }
 
