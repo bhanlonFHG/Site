@@ -1178,6 +1178,14 @@ textarea {
     grid-template-columns: auto 1fr auto;
   }
 
+  .nav-logo {
+    justify-self: start;
+  }
+
+  .nav-toggle {
+    justify-self: end;
+  }
+
   .nav-links.open {
     display: flex;
     position: fixed;
@@ -1210,7 +1218,35 @@ textarea {
 
 @media (max-width: 600px) {
   .container { padding: 0 1.5rem; }
-  .hero-content { padding: 0 1.5rem 4rem; }
+
+  /* Hero — taller on mobile so images breathe, crop from center */
+  .hero {
+    height: 85vh;
+    min-height: 520px;
+    max-height: 700px;
+  }
+
+  .hero-slide img {
+    object-position: center center;
+  }
+
+  .hero-content {
+    padding: 0 1.5rem 5rem;
+  }
+
+  /* Move indicators up slightly on mobile */
+  .hero-indicators {
+    bottom: 2rem;
+  }
+
+  .hero-proj-label {
+    display: none;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
   .portfolio-grid { grid-template-columns: 1fr; }
   .portfolio-hero { height: 320px; }
   .portfolio-grid-item { height: 240px; }
