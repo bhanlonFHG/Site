@@ -1,0 +1,158 @@
+/* FHG Builders — About Page Styles
+   Loaded after main.css. Inherits all :root vars, nav, footer, buttons. */
+
+/* ── About Header ── */
+.about-header {
+  padding-top: calc(var(--nav-h) + 6rem);
+  padding-bottom: 4rem;
+  background: var(--c-bg);
+  text-align: center;
+}
+.about-header .label-tag {
+  display: block;
+  margin-bottom: 1rem;
+}
+.about-header h1 {
+  font-family: var(--f-display);
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.05;
+  color: var(--c-text);
+  margin-bottom: 1.75rem;
+}
+.about-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--c-text-mid);
+}
+
+/* ── Philosophy ── */
+.about-philosophy {
+  padding: var(--sp-xl) 0;
+  background: var(--c-dark);
+}
+.about-philosophy-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+.about-philosophy h2 {
+  font-family: var(--f-display);
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  margin-top: 0.75rem;
+}
+.about-philosophy p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.72);
+  margin-bottom: 1.25rem;
+}
+.about-philosophy p:last-child { margin-bottom: 0; }
+
+/* ── Team ── */
+.about-team {
+  padding: var(--sp-xl) 0;
+  background: var(--c-bg);
+}
+.about-team-header {
+  margin-bottom: 3.5rem;
+}
+.about-team-header .label-tag {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.about-team-header h2 {
+  font-family: var(--f-display);
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--c-text);
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--c-border);
+}
+.bio-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--c-border);
+  align-items: start;
+}
+.bio-photo {
+  width: 100%;
+  aspect-ratio: 5 / 6;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #C8C8C4;
+}
+.bio-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.bio-content {
+  padding-top: 0.5rem;
+}
+.bio-name {
+  font-family: var(--f-display);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--c-text);
+  margin-bottom: 0.25rem;
+}
+.bio-role {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: 1.25rem;
+}
+.bio-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--c-text-mid);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .about-philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-header {
+    padding-top: calc(var(--nav-h) + 3rem);
+    padding-bottom: 2.5rem;
+  }
+  .bio-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+  }
+  .bio-photo {
+    max-width: 240px;
+    aspect-ratio: 5 / 6;
+  }
+}

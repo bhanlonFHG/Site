@@ -3,22 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FHG Builders | Denver Construction — Residential, Commercial & Development</title>
-<meta name="description" content="FHG Builders is Denver's boutique construction firm — residential custom homes, renovations, commercial build-outs, and development projects built with enterprise-grade project management.">
+<title>Commercial Construction — FHG Builders | Denver Renovation & Tenant Improvement</title>
+<meta name="description" content="Denver commercial general contractor. Interior renovation, ground-up commercial construction, and tenant improvement delivered on schedule with minimal disruption to your business.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<!-- ============================================================
-     NAV
-     ============================================================ -->
+<!-- NAV -->
 <nav class="nav" id="main-nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="FHG Builders — Home">
+    <a href="index.html" class="nav-logo" aria-label="FHG Builders — Home">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701.27 95.66" aria-hidden="true">
         <g>
           <path d="M207.99,74.02h-10.93V21.64h30.02v9.1h-19.1v13.51h17.77v9.06h-17.77v20.71Z"/>
@@ -39,7 +36,7 @@
 
     <ul class="nav-links" id="nav-links">
       <li><a href="residential.html">Residential</a></li>
-      <li><a href="commercial.html">Commercial</a></li>
+      <li><a href="commercial.html" class="active">Commercial</a></li>
       <li><a href="portfolio.html">Projects</a></li>
       <li><a href="development.html">Development</a></li>
       <li><a href="about.html">About</a></li>
@@ -55,37 +52,30 @@
   </div>
 </nav>
 
-
-<section class="hero" aria-label="FHG Builders — Featured Projects">
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" aria-label="FHG Builders Commercial">
   <div class="hero-slides">
-      <div class="hero-slide active" data-index="0">
-        <img src="images/hero/hero-long.jpg" alt="Long Renovation · Denver Metro" loading="eager">
-        <div class="hero-gradient"></div>
-      </div>
-      <div class="hero-slide " data-index="1">
-        <img src="images/hero/hero-steele.jpg" alt="Steele Street · Denver" loading="lazy">
-        <div class="hero-gradient"></div>
-      </div>
-      <div class="hero-slide " data-index="2">
-        <img src="images/hero/hero-kerr.jpg" alt="Kerr Gulch · Evergreen" loading="lazy">
-        <div class="hero-gradient"></div>
-      </div>
-      <div class="hero-slide " data-index="3">
-        <img src="images/hero/hero-cherry.jpg" alt="Cherry Hills Village · South Denver" loading="lazy">
-        <div class="hero-gradient"></div>
-      </div>
+    <div class="hero-slide active" data-index="0">
+      <img src="images/hero/hero-steele.jpg" alt="Commercial build · Denver" loading="eager">
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-slide " data-index="1">
+      <img src="images/hero/hero-long.jpg" alt="Commercial renovation · Denver Metro" loading="lazy">
+      <div class="hero-gradient"></div>
+    </div>
   </div>
 
-  <!-- Slide content — stays fixed over changing slides -->
   <div class="hero-content">
     <div class="hero-content-inner">
       <h1 style="line-height:1.0;">
-        <span style="display:block; font-size:clamp(0.95rem, 1.4vw, 1.2rem); font-weight:600; letter-spacing:0.18em; color:#ffffff; margin-bottom:0.15em;">FHG BUILDERS — COLORADO</span>
-        <span style="display:block;">Standards Raised.</span>
-        <span style="display:block; font-weight:600; font-size:clamp(1.5rem, 2.5vw, 2.3rem); letter-spacing:0.05em; color:#ffffff;">Construction Shouldn't Be Hard.</span>
+        <span style="display:block; font-size:clamp(0.95rem, 1.4vw, 1.2rem); font-weight:600; letter-spacing:0.18em; color:#ffffff; margin-bottom:0.15em;">FHG BUILDERS — COMMERCIAL</span>
+        <span style="display:block;">Construction Shouldn't Be Hard.</span>
+        <span style="display:block; font-weight:600; font-size:clamp(1.5rem, 2.5vw, 2.3rem); letter-spacing:0.05em; color:#ffffff;">On Schedule. On Budget. Open for Business.</span>
       </h1>
       <a href="#inquiry" class="hero-cta">
-        Schedule a Consultation
+        Discuss Your Project
         <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -93,16 +83,12 @@
     </div>
   </div>
 
-  <!-- Slide indicators -->
   <div class="hero-indicators" aria-label="Slide navigation">
-    <button class="hero-ind active" data-slide="0" aria-label="Long Renovation"></button>
-    <button class="hero-ind" data-slide="1" aria-label="Steele Street"></button>
-    <button class="hero-ind" data-slide="2" aria-label="Kerr Gulch"></button>
-    <button class="hero-ind" data-slide="3" aria-label="Cherry Hills Village"></button>
+    <button class="hero-ind active" data-slide="0" aria-label="Commercial build"></button>
+    <button class="hero-ind" data-slide="1" aria-label="Commercial renovation"></button>
   </div>
 
-  <!-- Project label -->
-  <div class="hero-proj-label" id="hero-proj-label">Long Renovation · Denver Metro</div>
+  <div class="hero-proj-label" id="hero-proj-label">Commercial Construction · Denver Metro</div>
 
   <div class="hero-scroll" aria-hidden="true">
     <div class="hero-scroll-line"></div>
@@ -110,48 +96,48 @@
   </div>
 </section>
 
-<!-- Mobile-only tagline block — hidden on desktop via CSS -->
+<!-- Mobile tagline -->
 <div class="hero-mobile-tagline">
   <h2>
-    <span>FHG Builders — Colorado</span>
-    Standards Raised.
+    <span>FHG Builders — Commercial</span>
+    Construction Shouldn't Be Hard.
   </h2>
-  <h2 class="hero-mobile-tagline-sub">Construction shouldn't be hard.</h2>
-  <a href="#inquiry" class="btn-primary" style="margin-top:0.5rem; display:inline-block;">Schedule a Consultation</a>
+  <h2 class="hero-mobile-tagline-sub">On schedule. On budget. Open for business.</h2>
+  <a href="#inquiry" class="btn-primary" style="margin-top:0.5rem; display:inline-block;">Discuss Your Project</a>
 </div>
 
 
 <!-- ============================================================
-     §2 BRAND STATEMENT
+     BRAND STATEMENT
      ============================================================ -->
 <section class="brand-statement">
   <div class="container">
     <div class="brand-statement-grid">
       <div>
-        <h2 class="fade-up" style="margin-top:0;">Enterprise-grade project management.<br>Built for your project.</h2>
-        <p class="fade-up fade-up-delay-1" style="font-size:1.05rem; font-weight:400; color:var(--c-text-mid); margin-bottom:1.25rem; font-style:italic;">Experience matters — talk to one of our experts.</p>
-        <p class="fade-up fade-up-delay-2">FHG Builders was founded by construction professionals who spent their careers running large-scale commercial and residential projects — the kind where schedule, budget, and documentation aren't optional. We brought that same discipline to Denver's luxury residential market. Whether you're renovating a kitchen or building from the ground up, you get a dedicated project lead, in-house design, and a team that stays with you from first conversation to first year after move in.</p>
+        <h2 class="fade-up" style="margin-top:0;">Every day of downtime<br>costs you money.</h2>
+        <p class="fade-up fade-up-delay-1" style="font-size:1.05rem; font-weight:400; color:var(--c-text-mid); margin-bottom:1.25rem; font-style:italic;">We build like your revenue depends on it — because it does.</p>
+        <p class="fade-up fade-up-delay-2">Commercial work lives and dies on the schedule. A missed deadline means a lease penalty, a delayed opening, or a tenant operating around a construction zone. FHG's principals come from large-scale commercial and institutional construction, where milestones are contractual and coordination across owners, tenants, architects, and inspectors is the job. We manage the moving parts so your space opens when it's supposed to — and your business keeps running while we work.</p>
         <div class="brand-btns fade-up fade-up-delay-3">
-          <a href="about.html" class="btn-primary">About FHG</a>
+          <a href="portfolio.html" class="btn-primary">View Our Work</a>
         </div>
       </div>
       <div class="fade-up fade-up-delay-2">
         <div class="stats-grid">
           <div class="stat-tile">
+            <div class="stat-number" style="font-size:2rem; letter-spacing:0.01em;">On-Time</div>
+            <div class="stat-label">Schedule-driven delivery built around your lease dates and opening targets</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-number" style="font-size:2rem; letter-spacing:0.01em;">Minimal</div>
+            <div class="stat-label">Disruption — we phase and sequence work to keep your business and neighbors operating</div>
+          </div>
+          <div class="stat-tile">
             <div class="stat-number">15<span>+</span></div>
-            <div class="stat-label">Years of large-scale project experience each of our principals bring to every build. Not collective experience. Each one of us has been doing this for a while.</div>
-          </div>
-          <div class="stat-tile">
-            <div class="stat-number" style="font-size:2rem; letter-spacing:0.01em;">$150K–$10M</div>
-            <div class="stat-label">Project range — every scope receives the same rigor</div>
-          </div>
-          <div class="stat-tile">
-            <div class="stat-number">20<span>+</span></div>
-            <div class="stat-label">Residential projects completed across the Denver metro</div>
+            <div class="stat-label">Years of large-scale commercial experience each principal brings to your project</div>
           </div>
           <div class="stat-tile">
             <div class="stat-number">1</div>
-            <div class="stat-label">Dedicated project lead from first meeting through year-one ownership</div>
+            <div class="stat-label">Point of contact coordinating ownership, tenants, architects, and inspectors</div>
           </div>
         </div>
       </div>
@@ -161,40 +147,16 @@
 
 
 <!-- ============================================================
-     §3 SERVICES
+     SERVICES
      ============================================================ -->
 <section class="services">
   <div class="container">
     <div class="services-header services-header--top-align">
       <div>
         <span class="label-tag fade-up">What we build</span>
-        <h2 class="services-subhead fade-up fade-up-delay-1">Residential construction, done completely.</h2>
-      </div>
-      <a href="portfolio.html" class="btn-primary fade-up">Full Portfolio</a>
-    </div>
-    <div class="services-grid">
-      <div class="service-card fade-up">
-        <div class="service-icon"></div>
-        <h3>Custom Home Builds</h3>
-        <p>Ground-up custom construction from concept through certificate of occupancy. We handle design, permitting, and construction — or work seamlessly alongside your architect. Every detail, managed.</p>
-      </div>
-      <div class="service-card fade-up fade-up-delay-1">
-        <div class="service-icon"></div>
-        <h3>Whole-Home Renovations</h3>
-        <p>Full-scope residential renovation for the homeowner who wants the home reimagined — not just updated. We coordinate every trade, manage the schedule, and protect the finish line.</p>
-      </div>
-      <div class="service-card fade-up fade-up-delay-2">
-        <div class="service-icon"></div>
-        <h3>Additions &amp; Expansions</h3>
-        <p>Pop-tops, room additions, ADUs, and structural expansions. We bring the same project rigor to a single-room addition as we do to a $10M build — because your investment deserves no less.</p>
-      </div>
-    </div>
-
-    <!-- Commercial Services -->
-    <div class="services-header" style="margin-top: 4rem;">
-      <div>
         <h2 class="services-subhead fade-up fade-up-delay-1">Commercial construction, done strategically.</h2>
       </div>
+      <a href="portfolio.html" class="btn-primary fade-up">Full Portfolio</a>
     </div>
     <div class="services-grid">
       <div class="service-card fade-up">
@@ -205,7 +167,7 @@
       <div class="service-card fade-up fade-up-delay-1">
         <div class="service-icon"></div>
         <h3>Ground-Up Commercial</h3>
-        <p>New commercial construction from site prep through certificate of occupancy. We bring the same enterprise-grade project management we apply to residential custom builds — every detail, on schedule, on budget.</p>
+        <p>New commercial construction from site prep through certificate of occupancy. We bring the same enterprise-grade project management we apply to large institutional builds — every detail, on schedule, on budget.</p>
       </div>
       <div class="service-card fade-up fade-up-delay-2">
         <div class="service-icon"></div>
@@ -218,106 +180,72 @@
 
 
 <!-- ============================================================
-     §4 PORTFOLIO
+     PROCESS
      ============================================================ -->
-<section class="portfolio" id="portfolio">
+<section class="process">
   <div class="container">
-    <div class="portfolio-header portfolio-header--top-align">
-      <div>
-        <span class="label-tag portfolio-label fade-up">Featured Projects</span>
-      </div>
-      <a href="portfolio.html" class="btn-primary fade-up">Full Portfolio</a>
-    </div>
+    <span class="label-tag fade-up" style="color: rgba(184,151,90,0.7);">How we work</span>
+    <h2 class="fade-up fade-up-delay-1">Built around your<br>business, not ours.</h2>
+    <p class="process-sub fade-up fade-up-delay-2">Scope, schedule, and coordination handled by people who've run projects where the deadline was non-negotiable.</p>
 
-    <!-- 4-up grid -->
-    <div class="portfolio-grid">
-      <div class="portfolio-grid-item fade-up" role="img" aria-label="Kerr Gulch — Custom Build">
-        <div class="proj-img-bg">
-          <img src="images/residential/cover-kerr.jpg" alt="Kerr Gulch — mountain modern">
-        </div>
-        <div class="proj-overlay"></div>
-        <div class="proj-info">
-          <div class="proj-label">Custom Build &nbsp;·&nbsp; Evergreen</div>
-          <div class="proj-name">Kerr Gulch</div>
-          <div class="proj-sub">Mountain modern with wine cellar &amp; spa</div>
-        </div>
+    <div class="process-grid">
+      <div class="process-step fade-up">
+        <div class="step-number">01</div>
+        <h3>Scope &amp; Feasibility</h3>
+        <p>We start by understanding your lease terms, your operating constraints, and your opening date. Then we put forward a clear scope and budget — so you know what's possible and what it costs before you commit.</p>
       </div>
-
-      <div class="portfolio-grid-item fade-up fade-up-delay-1" role="img" aria-label="Long Renovation">
-        <div class="proj-img-bg">
-          <img src="images/residential/cover-long.jpg" alt="Long Renovation — timber and stone exterior">
-        </div>
-        <div class="proj-overlay"></div>
-        <div class="proj-info">
-          <div class="proj-label">Renovation &nbsp;·&nbsp; Denver Metro</div>
-          <div class="proj-name">Long Renovation</div>
-          <div class="proj-sub">Full exterior &amp; landscape transformation</div>
-        </div>
+      <div class="process-step fade-up fade-up-delay-1">
+        <div class="step-number">02</div>
+        <h3>Permitting &amp; Coordination</h3>
+        <p>We manage permitting, landlord approvals, and stakeholder sign-offs. Commercial work has more parties at the table — we keep them aligned so the project doesn't stall waiting on someone else.</p>
       </div>
-
-      <div class="portfolio-grid-item fade-up fade-up-delay-2" role="img" aria-label="Steele Street — Custom Build">
-        <div class="proj-img-bg">
-          <img src="images/residential/cover-steele.jpg" alt="Steele Street — three-story urban modern">
-        </div>
-        <div class="proj-overlay"></div>
-        <div class="proj-info">
-          <div class="proj-label">Custom Build &nbsp;·&nbsp; Denver</div>
-          <div class="proj-name">Steele Street</div>
-          <div class="proj-sub">Three-story urban modern custom home</div>
-        </div>
+      <div class="process-step fade-up fade-up-delay-2">
+        <div class="step-number">03</div>
+        <h3>Phased Construction</h3>
+        <p>We sequence the work to minimize disruption — phasing around your operations, working off-hours where it matters, and protecting adjacent tenants. Your business keeps running while we build.</p>
       </div>
-
-      <div class="portfolio-grid-item fade-up fade-up-delay-3" role="img" aria-label="Arvada Renovation">
-        <div class="proj-img-bg">
-          <img src="images/residential/cover-arvada.jpg" alt="Arvada Renovation — full home interior">
-        </div>
-        <div class="proj-overlay"></div>
-        <div class="proj-info">
-          <div class="proj-label">Renovation &nbsp;·&nbsp; Arvada</div>
-          <div class="proj-name">Arvada Renovation</div>
-          <div class="proj-sub">Whole-home interior renovation</div>
-        </div>
+      <div class="process-step fade-up fade-up-delay-3">
+        <div class="step-number">04</div>
+        <h3>Turnover &amp; Closeout</h3>
+        <p>We deliver a space that's ready to occupy — inspections passed, documentation complete, punch list closed. You open on schedule, with a finished space that performs.</p>
       </div>
     </div>
-
-
   </div>
 </section>
 
 
-<!-- Process section removed — reserved for Residential page -->
-
-
 <!-- ============================================================
-     §6 TESTIMONIAL
-     ============================================================ -->
-<!-- Testimonial removed — to be re-added when real quotes available -->
-
-
-<!-- ============================================================
-     §7 INQUIRY
+     INQUIRY
      ============================================================ -->
 <section class="inquiry" id="inquiry">
   <div class="container">
     <span class="label-tag inquiry-label fade-up">Start your project</span>
-    <h2 class="fade-up fade-up-delay-1">Let's talk about what you're building.</h2>
-    <p class="inquiry-sub fade-up fade-up-delay-2">Construction shouldn't be hard — talk to one of our experts. We respond within one business day.</p>
+    <h2 class="fade-up fade-up-delay-1">Let's talk about your space.</h2>
+    <p class="inquiry-sub fade-up fade-up-delay-2">Tell us about your project, your timeline, and your constraints. We respond within one business day.</p>
 
     <div class="inquiry-grid">
-      <!-- Calendly -->
       <div class="fade-up">
-        <span class="inquiry-col-label">Schedule a consultation</span>
-        <div class="calendly-wrap">
-          <!-- Calendly inline widget -->
-          <div class="calendly-inline-widget"
-               data-url="https://calendly.com/bhanlon-fhgbuilders/consultation?hide_gdpr_banner=1&primary_color=1a1a18"
-               style="min-width:100%;height:580px;">
+        <span class="inquiry-col-label">Reach us directly</span>
+        <div style="padding:2rem; background:var(--c-bg); border:1px solid var(--c-border); border-radius:4px;">
+          <div class="footer-contact-item" style="margin-bottom:1.5rem;">
+            <span class="contact-type" style="display:block; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--c-text-muted); margin-bottom:0.35rem;">Phone</span>
+            <a href="tel:7192374448" style="font-size:1.1rem; color:var(--c-text);">719-237-4448</a>
           </div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <div class="footer-contact-item" style="margin-bottom:1.5rem;">
+            <span class="contact-type" style="display:block; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--c-text-muted); margin-bottom:0.35rem;">Phone</span>
+            <a href="tel:3035178534" style="font-size:1.1rem; color:var(--c-text);">303-517-8534</a>
+          </div>
+          <div class="footer-contact-item" style="margin-bottom:1.5rem;">
+            <span class="contact-type" style="display:block; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--c-text-muted); margin-bottom:0.35rem;">Email</span>
+            <a href="mailto:bhanlon@fhgbuilders.com" style="font-size:1.05rem; color:var(--c-text);">bhanlon@fhgbuilders.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="contact-type" style="display:block; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--c-text-muted); margin-bottom:0.35rem;">Email</span>
+            <a href="mailto:jsteinert@fhgbuilders.com" style="font-size:1.05rem; color:var(--c-text);">jsteinert@fhgbuilders.com</a>
+          </div>
         </div>
       </div>
 
-      <!-- Contact form -->
       <div class="fade-up fade-up-delay-1">
         <span class="inquiry-col-label">Or send us a message</span>
         <form id="inquiry-form" novalidate>
@@ -332,26 +260,19 @@
             <input type="tel" name="phone" placeholder="Phone number" autocomplete="tel">
           </div>
           <div class="form-group">
+            <input type="text" name="company" placeholder="Company / organization" autocomplete="organization">
+          </div>
+          <div class="form-group">
             <select name="project_type" required>
               <option value="" disabled selected>Project type</option>
-              <option value="custom_build">Custom Home Build</option>
-              <option value="whole_home_reno">Whole-Home Renovation</option>
-              <option value="addition">Addition or Expansion</option>
-              <option value="kitchen_bath">Kitchen or Bath Renovation</option>
+              <option value="commercial_reno">Commercial Renovation</option>
+              <option value="ground_up">Ground-Up Commercial</option>
+              <option value="tenant_improvement">Office / Tenant Improvement</option>
               <option value="not_sure">Not Sure Yet</option>
             </select>
           </div>
           <div class="form-group">
-            <select name="budget_range">
-              <option value="" disabled selected>Approximate budget (optional)</option>
-              <option value="150_500">$150K – $500K</option>
-              <option value="500_1m">$500K – $1M</option>
-              <option value="1m_3m">$1M – $3M</option>
-              <option value="3m_plus">$3M+</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <textarea name="message" placeholder="Tell us about your project — scope, timeline, neighborhood, any details that help us understand what you're building."></textarea>
+            <textarea name="message" placeholder="Tell us about your project — square footage, use type, location, timeline, and any lease or operating constraints we should know about."></textarea>
           </div>
           <button type="submit" class="btn-submit">Send Message</button>
           <p class="form-privacy">Your information is kept private and never shared. We'll respond within one business day.</p>
@@ -362,9 +283,7 @@
 </section>
 
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -453,11 +372,6 @@
   </div>
 </footer>
 
-
-<!-- ============================================================
-     JAVASCRIPT
-     ============================================================ -->
 <script src="js/main.js"></script>
-
 </body>
 </html>

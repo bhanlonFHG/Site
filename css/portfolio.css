@@ -1,13 +1,13 @@
 /* FHG Builders — Portfolio Page Styles */
-:root{--c-bg:#F1F1F0;--c-bg-alt:#E8E8E6;--c-dark:#181818;--c-text:#181818;--c-text-mid:#444;--c-text-muted:#787878;--c-accent:#1E3A4A;--c-gold:#A07840;--c-border:rgba(18,18,18,.11);--c-border-mid:rgba(18,18,18,.18);--f-display:'Barlow Condensed',sans-serif;--f-sans:'DM Sans',sans-serif;--max-w:1200px;--nav-h:68px}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--f-sans);background:var(--c-bg);color:var(--c-text);-webkit-font-smoothing:antialiased}
-a{text-decoration:none;color:inherit}
-img{display:block;width:100%;height:100%;object-fit:cover}
+/* :root vars inherited from main.css */
+
+
+
+
+
 /* Nav handled entirely by main.css */
 #view-landing{display:block}#view-project{display:none}
-..portfolio-header {
+.portfolio-header {
   padding-top: calc(var(--nav-h) + 4rem);
   padding-bottom: 3rem;
   text-align: center;
