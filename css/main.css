@@ -599,7 +599,6 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 3rem;
 }
 
-/* Button aligns to top of label, not bottom of h2 */
 .services-header--top-align {
   align-items: flex-start;
 }
@@ -612,21 +611,22 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.03em;
 }
 
-/* Subhead — smaller, same line, confident but secondary */
-.services-subhead {
-  font-family: var(--f-display);
-  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
-  font-weight: 400;
-  color: var(--c-text-mid);
-  letter-spacing: 0.02em;
-  margin-top: 0.3rem;
-  white-space: nowrap;
-}
-
 .services-header .label-tag {
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.08em;
+}
+
+/* Subhead under What we build / Commercial — scales fluidly, never clips */
+.services-subhead {
+  font-family: var(--f-display);
+  font-size: clamp(0.85rem, 2.8vw, 1.35rem);
+  font-weight: 400;
+  color: var(--c-text-mid);
+  letter-spacing: 0.02em;
+  margin-top: 0.3rem;
+  white-space: normal;
+  line-height: 1.2;
 }
 
 .services-grid {
@@ -690,19 +690,18 @@ a { text-decoration: none; color: inherit; }
   align-items: flex-start;
 }
 
+.portfolio-label {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
 .portfolio-header h2 {
   font-family: var(--f-display);
   font-size: clamp(2.2rem, 3.2vw, 3rem);
   font-weight: 500;
   color: var(--c-text);
   letter-spacing: 0.03em;
-}
-
-/* Featured Projects label matches What we build */
-.portfolio-label {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 .btn-link {
@@ -950,6 +949,12 @@ a { text-decoration: none; color: inherit; }
 .inquiry {
   padding: var(--sp-xl) 0;
   background: var(--c-bg-alt);
+}
+
+.inquiry-label {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .inquiry h2 {
