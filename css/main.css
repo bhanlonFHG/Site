@@ -599,6 +599,7 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 3rem;
 }
 
+/* Button pins to top of label rather than bottom of h2 */
 .services-header--top-align {
   align-items: flex-start;
 }
@@ -611,13 +612,7 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.03em;
 }
 
-.services-header .label-tag {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-/* Subhead under What we build / Commercial — scales fluidly, never clips */
+/* Subhead line — smaller, fluid, wraps gracefully on mobile */
 .services-subhead {
   font-family: var(--f-display);
   font-size: clamp(0.85rem, 2.8vw, 1.35rem);
@@ -627,6 +622,12 @@ a { text-decoration: none; color: inherit; }
   margin-top: 0.3rem;
   white-space: normal;
   line-height: 1.2;
+}
+
+.services-header .label-tag {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .services-grid {
@@ -690,6 +691,7 @@ a { text-decoration: none; color: inherit; }
   align-items: flex-start;
 }
 
+/* Featured Projects label — matches What we build in size and weight */
 .portfolio-label {
   font-size: 15px;
   font-weight: 700;
@@ -949,12 +951,6 @@ a { text-decoration: none; color: inherit; }
 .inquiry {
   padding: var(--sp-xl) 0;
   background: var(--c-bg-alt);
-}
-
-.inquiry-label {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 .inquiry h2 {
