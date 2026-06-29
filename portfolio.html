@@ -12,35 +12,48 @@
 </head>
 <body>
 
-<nav class="nav">
+<nav class="nav" id="main-nav">
   <div class="nav-inner">
-    <a href="javascript:showLanding()" class="nav-back" id="nav-back" style="visibility:hidden;">
-      <svg viewBox="0 0 14 14" fill="none" width="14" height="14"><path d="M13 7H1M6 2L1 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      All Projects
+    <a href="index.html" class="nav-logo" aria-label="FHG Builders — Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701.27 95.66" aria-hidden="true">
+        <g>
+          <path d="M207.99,74.02h-10.93V21.64h30.02v9.1h-19.1v13.51h17.77v9.06h-17.77v20.71Z"/>
+          <path d="M277.85,74.02h-11.07v-22.61h-20.74v22.61h-11.11V21.64h11.11v20.53h20.74v-20.53h11.07v52.38Z"/>
+          <path d="M307.02,44.6h20.78v27.16c-2.75.91-5.6,1.63-8.56,2.17s-6.32.81-10.07.81c-5.21,0-9.63-1.03-13.26-3.08s-6.39-5.09-8.28-9.1-2.83-8.95-2.83-14.8c0-5.49,1.06-10.25,3.17-14.26s5.21-7.12,9.28-9.32,9.05-3.3,14.92-3.3c2.77,0,5.51.3,8.2.9s5.15,1.37,7.34,2.33l-3.69,8.89c-1.6-.81-3.43-1.49-5.48-2.04s-4.2-.82-6.45-.82c-3.22,0-6.03.74-8.4,2.22s-4.22,3.55-5.52,6.22-1.95,5.8-1.95,9.4c0,3.42.47,6.44,1.4,9.08s2.4,4.71,4.41,6.2,4.62,2.24,7.85,2.24c1.58,0,2.91-.08,3.99-.23s2.11-.32,3.06-.48v-10.93h-9.92v-9.24Z"/>
+          <path d="M362.15,21.64h16.3c6.97,0,12.25.98,15.84,2.94s5.37,5.4,5.37,10.32c0,1.98-.32,3.77-.95,5.37s-1.55,2.91-2.74,3.94-2.65,1.7-4.37,2.01v.36c1.74.36,3.32.97,4.73,1.85s2.54,2.14,3.39,3.8,1.27,3.86,1.27,6.61c0,3.18-.78,5.9-2.33,8.17s-3.77,4.01-6.65,5.21-6.3,1.81-10.26,1.81h-19.6V21.64ZM373.26,42.38h6.45c3.22,0,5.46-.51,6.7-1.52s1.86-2.51,1.86-4.5-.73-3.45-2.2-4.32-3.79-1.31-6.97-1.31h-5.84v11.64ZM373.26,51.2v13.65h7.24c3.34,0,5.67-.64,6.99-1.93s1.97-3.02,1.97-5.2c0-1.29-.29-2.42-.86-3.4s-1.53-1.74-2.88-2.29-3.21-.82-5.57-.82h-6.88Z"/>
+          <path d="M453.21,21.64v33.89c0,3.61-.79,6.86-2.38,9.76s-3.99,5.2-7.2,6.9-7.26,2.54-12.13,2.54c-6.93,0-12.21-1.77-15.84-5.3-3.63-3.54-5.45-8.22-5.45-14.04V21.64h11.07v32.07c0,4.32.88,7.36,2.65,9.1s4.38,2.62,7.85,2.62c2.44,0,4.41-.42,5.93-1.25s2.63-2.13,3.35-3.87,1.07-3.97,1.07-6.66v-31.99h11.07Z"/>
+          <path d="M465.15,74.02V21.64h11.11v52.38h-11.11Z"/>
+          <path d="M488.57,74.02V21.64h11.11v43.21h21.25v9.17h-32.35Z"/>
+          <path d="M572.6,47.33c0,5.9-1.13,10.83-3.39,14.78-2.26,3.95-5.52,6.93-9.8,8.92s-9.42,2.99-15.44,2.99h-14.83V21.64h16.45c5.49,0,10.26.97,14.3,2.92s7.17,4.82,9.39,8.63,3.33,8.52,3.33,14.13ZM561.06,47.61c0-3.87-.57-7.05-1.7-9.55s-2.81-4.34-5.02-5.54-4.94-1.79-8.19-1.79h-5.91v34.11h4.77c5.42,0,9.45-1.45,12.09-4.34s3.96-7.19,3.96-12.9Z"/>
+          <path d="M612.74,74.02h-30.17V21.64h30.17v9.1h-19.06v11.5h17.74v9.1h-17.74v13.51h19.06v9.17Z"/>
+          <path d="M638.05,21.64c4.75,0,8.68.57,11.77,1.72s5.39,2.88,6.9,5.2,2.26,5.24,2.26,8.78c0,2.39-.45,4.48-1.36,6.27s-2.1,3.31-3.58,4.55-3.08,2.26-4.8,3.05l15.41,22.82h-12.33l-12.5-20.1h-5.91v20.1h-11.11V21.64h15.26ZM637.26,30.74h-3.37v14.15h3.58c3.68,0,6.31-.62,7.9-1.85s2.38-3.04,2.38-5.43-.85-4.25-2.56-5.3-4.35-1.58-7.94-1.58Z"/>
+          <path d="M701.27,59.47c0,3.11-.75,5.8-2.26,8.1s-3.7,4.06-6.57,5.3-6.37,1.86-10.48,1.86c-1.82,0-3.59-.12-5.32-.36s-3.39-.59-4.98-1.06-3.1-1.04-4.53-1.74v-10.32c2.48,1.1,5.06,2.09,7.74,2.97s5.33,1.33,7.95,1.33c1.82,0,3.28-.24,4.39-.72s1.92-1.13,2.42-1.97.75-1.79.75-2.87c0-1.31-.44-2.44-1.33-3.37s-2.1-1.8-3.64-2.62-3.28-1.68-5.21-2.62c-1.22-.57-2.54-1.27-3.98-2.1s-2.79-1.83-4.08-3.03-2.35-2.65-3.17-4.35-1.24-3.76-1.24-6.14c0-3.13.72-5.8,2.15-8.03s3.48-3.92,6.14-5.11,5.81-1.77,9.44-1.77c2.72,0,5.32.32,7.79.95s5.06,1.55,7.76,2.74l-3.58,8.63c-2.41-.98-4.57-1.74-6.48-2.28s-3.86-.81-5.84-.81c-1.39,0-2.57.22-3.55.66s-1.72,1.06-2.22,1.86-.75,1.73-.75,2.78c0,1.24.36,2.29,1.09,3.13s1.83,1.67,3.3,2.45,3.3,1.71,5.5,2.76c2.68,1.27,4.96,2.59,6.86,3.96s3.36,2.99,4.39,4.84,1.54,4.15,1.54,6.9Z"/>
+        </g>
+        <path d="M42.28,47.68L84.84.2c.24-.27.67-.27.91,0l42.57,47.47,42.1,46.95c.36.4.07,1.03-.46,1.03h-18.36c-.36,0-.71-.15-.95-.43l-47.84-53.35c-.24-.27-.67-.27-.92,0l-15.37,17.14c-.21.24-.59.24-.8,0l-7.62-8.5c-.24-.27-.67-.27-.92,0l-40.09,44.71c-.24.27-.59.43-.95.43H.61c-.52,0-.8-.62-.45-1.01l42.12-46.97Z"/>
+      </svg>
     </a>
-    <a href="index.html" class="nav-logo" aria-label="FHG Builders — Home"><svg aria-hidden="true" style="height:26px;width:auto;" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701.27 95.66">
-  <g>
-    <path d="M207.99,74.02h-10.93V21.64h30.02v9.1h-19.1v13.51h17.77v9.06h-17.77v20.71Z"/>
-    <path d="M277.85,74.02h-11.07v-22.61h-20.74v22.61h-11.11V21.64h11.11v20.53h20.74v-20.53h11.07v52.38Z"/>
-    <path d="M307.02,44.6h20.78v27.16c-2.75.91-5.6,1.63-8.56,2.17s-6.32.81-10.07.81c-5.21,0-9.63-1.03-13.26-3.08s-6.39-5.09-8.28-9.1-2.83-8.95-2.83-14.8c0-5.49,1.06-10.25,3.17-14.26s5.21-7.12,9.28-9.32,9.05-3.3,14.92-3.3c2.77,0,5.51.3,8.2.9s5.15,1.37,7.34,2.33l-3.69,8.89c-1.6-.81-3.43-1.49-5.48-2.04s-4.2-.82-6.45-.82c-3.22,0-6.03.74-8.4,2.22s-4.22,3.55-5.52,6.22-1.95,5.8-1.95,9.4c0,3.42.47,6.44,1.4,9.08s2.4,4.71,4.41,6.2,4.62,2.24,7.85,2.24c1.58,0,2.91-.08,3.99-.23s2.11-.32,3.06-.48v-10.93h-9.92v-9.24Z"/>
-    <path d="M362.15,21.64h16.3c6.97,0,12.25.98,15.84,2.94s5.37,5.4,5.37,10.32c0,1.98-.32,3.77-.95,5.37s-1.55,2.91-2.74,3.94-2.65,1.7-4.37,2.01v.36c1.74.36,3.32.97,4.73,1.85s2.54,2.14,3.39,3.8,1.27,3.86,1.27,6.61c0,3.18-.78,5.9-2.33,8.17s-3.77,4.01-6.65,5.21-6.3,1.81-10.26,1.81h-19.6V21.64ZM373.26,42.38h6.45c3.22,0,5.46-.51,6.7-1.52s1.86-2.51,1.86-4.5-.73-3.45-2.2-4.32-3.79-1.31-6.97-1.31h-5.84v11.64ZM373.26,51.2v13.65h7.24c3.34,0,5.67-.64,6.99-1.93s1.97-3.02,1.97-5.2c0-1.29-.29-2.42-.86-3.4s-1.53-1.74-2.88-2.29-3.21-.82-5.57-.82h-6.88Z"/>
-    <path d="M453.21,21.64v33.89c0,3.61-.79,6.86-2.38,9.76s-3.99,5.2-7.2,6.9-7.26,2.54-12.13,2.54c-6.93,0-12.21-1.77-15.84-5.3-3.63-3.54-5.45-8.22-5.45-14.04V21.64h11.07v32.07c0,4.32.88,7.36,2.65,9.1s4.38,2.62,7.85,2.62c2.44,0,4.41-.42,5.93-1.25s2.63-2.13,3.35-3.87,1.07-3.97,1.07-6.66v-31.99h11.07Z"/>
-    <path d="M465.15,74.02V21.64h11.11v52.38h-11.11Z"/>
-    <path d="M488.57,74.02V21.64h11.11v43.21h21.25v9.17h-32.35Z"/>
-    <path d="M572.6,47.33c0,5.9-1.13,10.83-3.39,14.78-2.26,3.95-5.52,6.93-9.8,8.92s-9.42,2.99-15.44,2.99h-14.83V21.64h16.45c5.49,0,10.26.97,14.3,2.92s7.17,4.82,9.39,8.63,3.33,8.52,3.33,14.13ZM561.06,47.61c0-3.87-.57-7.05-1.7-9.55s-2.81-4.34-5.02-5.54-4.94-1.79-8.19-1.79h-5.91v34.11h4.77c5.42,0,9.45-1.45,12.09-4.34s3.96-7.19,3.96-12.9Z"/>
-    <path d="M612.74,74.02h-30.17V21.64h30.17v9.1h-19.06v11.5h17.74v9.1h-17.74v13.51h19.06v9.17Z"/>
-    <path d="M638.05,21.64c4.75,0,8.68.57,11.77,1.72s5.39,2.88,6.9,5.2,2.26,5.24,2.26,8.78c0,2.39-.45,4.48-1.36,6.27s-2.1,3.31-3.58,4.55-3.08,2.26-4.8,3.05l15.41,22.82h-12.33l-12.5-20.1h-5.91v20.1h-11.11V21.64h15.26ZM637.26,30.74h-3.37v14.15h3.58c3.68,0,6.31-.62,7.9-1.85s2.38-3.04,2.38-5.43-.85-4.25-2.56-5.3-4.35-1.58-7.94-1.58Z"/>
-    <path d="M701.27,59.47c0,3.11-.75,5.8-2.26,8.1s-3.7,4.06-6.57,5.3-6.37,1.86-10.48,1.86c-1.82,0-3.59-.12-5.32-.36s-3.39-.59-4.98-1.06-3.1-1.04-4.53-1.74v-10.32c2.48,1.1,5.06,2.09,7.74,2.97s5.33,1.33,7.95,1.33c1.82,0,3.28-.24,4.39-.72s1.92-1.13,2.42-1.97.75-1.79.75-2.87c0-1.31-.44-2.44-1.33-3.37s-2.1-1.8-3.64-2.62-3.28-1.68-5.21-2.62c-1.22-.57-2.54-1.27-3.98-2.1s-2.79-1.83-4.08-3.03-2.35-2.65-3.17-4.35-1.24-3.76-1.24-6.14c0-3.13.72-5.8,2.15-8.03s3.48-3.92,6.14-5.11,5.81-1.77,9.44-1.77c2.72,0,5.32.32,7.79.95s5.06,1.55,7.76,2.74l-3.58,8.63c-2.41-.98-4.57-1.74-6.48-2.28s-3.86-.81-5.84-.81c-1.39,0-2.57.22-3.55.66s-1.72,1.06-2.22,1.86-.75,1.73-.75,2.78c0,1.24.36,2.29,1.09,3.13s1.83,1.67,3.3,2.45,3.3,1.71,5.5,2.76c2.68,1.27,4.96,2.59,6.86,3.96s3.36,2.99,4.39,4.84,1.54,4.15,1.54,6.9Z"/>
-  </g>
-  <path d="M42.28,47.68L84.84.2c.24-.27.67-.27.91,0l42.57,47.47,42.1,46.95c.36.4.07,1.03-.46,1.03h-18.36c-.36,0-.71-.15-.95-.43l-47.84-53.35c-.24-.27-.67-.27-.92,0l-15.37,17.14c-.21.24-.59.24-.8,0l-7.62-8.5c-.24-.27-.67-.27-.92,0l-40.09,44.71c-.24.27-.59.43-.95.43H.61c-.52,0-.8-.62-.45-1.01l42.12-46.97Z"/>
-</svg></a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/residential">Residential</a></li>
+      <li><a href="/commercial">Commercial</a></li>
+      <li><a href="portfolio.html" class="active">Projects</a></li>
+      <li><a href="/development">Development</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+
     <a href="index.html#inquiry" class="nav-cta">Start Your Project</a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </nav>
 
 <div id="view-landing">
   <div class="portfolio-header">
-    <span class="label-tag">FHG Builders Residential</span>
+    <span class="label-tag">Residential Projects</span>
     <h1>Our Work</h1>
     <p>Custom homes, renovations, and additions across the Denver metro — every project built with the same standard.</p>
   </div>
@@ -68,7 +81,7 @@
     </div>
     <div class="proj-card" data-type="Renovation" onclick="openProject('long')">
       <div class="proj-card-img">
-        <img src="images/residential/cover-long.jpg" alt="Long Renovation" loading="lazy">
+        <img src="images/residential/cover-long.jpg" alt="Roxborough Park Neighborhood" loading="lazy">
         <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
       </div>
       <div class="proj-card-info">
@@ -76,7 +89,7 @@
           <span class="proj-type">Renovation</span>
           <span class="proj-loc">Denver Metro, CO</span>
         </div>
-        <h2 class="proj-card-name">Long Renovation</h2>
+        <h2 class="proj-card-name">Roxborough Park Neighborhood</h2>
         <p class="proj-card-desc">A complete exterior and landscape transformation that reimagined a dated home into a timber-and-stone showpiece. New entry, patios, lighting, and landscaping — top to bottom.</p>
         <span class="proj-photo-count">16 photos</span>
       </div>
@@ -111,21 +124,6 @@
         <span class="proj-photo-count">15 photos</span>
       </div>
     </div>
-    <div class="proj-card" data-type="Custom Build" onclick="openProject('hartline')">
-      <div class="proj-card-img">
-        <img src="images/residential/cover-hartline.jpg" alt="Hartline Residence" loading="lazy">
-        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
-      </div>
-      <div class="proj-card-info">
-        <div class="proj-card-meta">
-          <span class="proj-type">Custom Build</span>
-          <span class="proj-loc">Conifer, CO</span>
-        </div>
-        <h2 class="proj-card-name">Hartline Residence</h2>
-        <p class="proj-card-desc">A dramatic mountain custom home featuring a two-story stone fireplace, barn door details, floor-to-ceiling windows, and an open plan designed to frame the surrounding landscape.</p>
-        <span class="proj-photo-count">2 photos</span>
-      </div>
-    </div>
     <div class="proj-card" data-type="Renovation" onclick="openProject('arvada')">
       <div class="proj-card-img">
         <img src="images/residential/cover-arvada.jpg" alt="Arvada Renovation" loading="lazy">
@@ -143,7 +141,7 @@
     </div>
     <div class="proj-card" data-type="Addition & Renovation" onclick="openProject('locust')">
       <div class="proj-card-img">
-        <img src="images/residential/cover-locust.jpg" alt="Locust Street Poptop" loading="lazy">
+        <img src="images/residential/cover-locust.jpg" alt="Locust St, Denver" loading="lazy">
         <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
       </div>
       <div class="proj-card-info">
@@ -151,7 +149,7 @@
           <span class="proj-type">Addition & Renovation</span>
           <span class="proj-loc">Denver, CO</span>
         </div>
-        <h2 class="proj-card-name">Locust Street Poptop</h2>
+        <h2 class="proj-card-name">Locust St, Denver</h2>
         <p class="proj-card-desc">A second-story addition — known in Denver as a poptop — that doubled the home's square footage while giving it an entirely new identity. Modern farmhouse exterior with a refreshed open interior.</p>
         <span class="proj-photo-count">5 photos</span>
       </div>
@@ -171,24 +169,9 @@
         <span class="proj-photo-count">13 photos</span>
       </div>
     </div>
-    <div class="proj-card" data-type="Renovation" onclick="openProject('duke')">
-      <div class="proj-card-img">
-        <img src="images/residential/cover-duke.jpg" alt="Duke Renovation" loading="lazy">
-        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
-      </div>
-      <div class="proj-card-info">
-        <div class="proj-card-meta">
-          <span class="proj-type">Renovation</span>
-          <span class="proj-loc">Denver Metro, CO</span>
-        </div>
-        <h2 class="proj-card-name">Duke Renovation</h2>
-        <p class="proj-card-desc">A bold kitchen renovation anchored by brass lantern pendants, white cabinetry, and a sleek black island. Every detail chosen to balance elegance with everyday function.</p>
-        <span class="proj-photo-count">6 photos</span>
-      </div>
-    </div>
     <div class="proj-card" data-type="Renovation" onclick="openProject('kampen')">
       <div class="proj-card-img">
-        <img src="images/residential/cover-kampen.jpg" alt="Kampen Bathroom" loading="lazy">
+        <img src="images/residential/cover-kampen.jpg" alt="Landmark Tower — Multiple Projects" loading="lazy">
         <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
       </div>
       <div class="proj-card-info">
@@ -196,7 +179,7 @@
           <span class="proj-type">Renovation</span>
           <span class="proj-loc">Denver Metro, CO</span>
         </div>
-        <h2 class="proj-card-name">Kampen Bathroom</h2>
+        <h2 class="proj-card-name">Landmark Tower — Multiple Projects</h2>
         <p class="proj-card-desc">A master bath renovation that replaced an outdated space with clean lines, matte black fixtures, quartz surfaces, and an arched mirror that became the room's focal point.</p>
         <span class="proj-photo-count">2 photos</span>
       </div>
