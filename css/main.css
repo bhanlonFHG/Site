@@ -63,7 +63,7 @@ a { text-decoration: none; color: inherit; }
 
 .label-tag {
   font-family: var(--f-sans);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -469,7 +469,7 @@ a { text-decoration: none; color: inherit; }
    §2 BRAND STATEMENT
    ============================================================ */
 .brand-statement {
-  padding: var(--sp-lg) 0 var(--sp-xl);
+  padding: var(--sp-md) 0 var(--sp-xl);
   background: var(--c-bg);
 }
 
@@ -1171,6 +1171,16 @@ textarea {
 
 /* Mobile tagline — hidden on desktop, shown only on mobile */
 .hero-mobile-tagline { display: none; }
+
+.hero-mobile-sub {
+  font-family: var(--f-sans);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
 
 @media (max-width: 900px) {
   :root { --nav-h: 60px; }
