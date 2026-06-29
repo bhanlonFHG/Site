@@ -55,13 +55,14 @@
 <div id="view-landing">
   <div class="portfolio-header">
     <h1>Our Work</h1>
-    <p>Custom homes, renovations, and additions across the Denver metro — every project built with the same standard.</p>
+    <p>Custom homes, renovations, additions, and commercial projects across the Denver metro — every project built with the same standard.</p>
   </div>
   <div class="filter-bar">
     <button class="filter-btn active" onclick="filterProjects('all',this)">All Projects</button>
     <button class="filter-btn" onclick="filterProjects('Custom Build',this)">Custom Builds</button>
     <button class="filter-btn" onclick="filterProjects('Renovation',this)">Renovations</button>
     <button class="filter-btn" onclick="filterProjects('Addition',this)">Additions</button>
+    <button class="filter-btn" onclick="filterProjects('Commercial',this)">Commercial</button>
   </div>
   <div class="projects-grid">
     <div class="proj-card" data-type="Custom Build" onclick="openProject('kerr')">
@@ -177,7 +178,7 @@
       <div class="proj-card-info">
         <div class="proj-card-meta">
           <span class="proj-type">Renovation</span>
-          <span class="proj-loc">Denver Metro, CO</span>
+          <span class="proj-loc">Greenwood Village, CO</span>
         </div>
         <h2 class="proj-card-name">Landmark Tower — Multiple Projects</h2>
         <p class="proj-card-desc">A master bath renovation that replaced an outdated space with clean lines, matte black fixtures, quartz surfaces, and an arched mirror that became the room's focal point.</p>
@@ -192,13 +193,154 @@
       <div class="proj-card-info">
         <div class="proj-card-meta">
           <span class="proj-type">Renovation</span>
-          <span class="proj-loc">Sedalia, CO</span>
+          <span class="proj-loc">Granby, CO</span>
         </div>
         <h2 class="proj-card-name">Saddle Ridge Bathroom</h2>
         <p class="proj-card-desc">A full bathroom renovation in a mountain property — sliding glass shower enclosure, vessel sink, and updated vanity that brings modern comfort to a rustic Colorado setting.</p>
         <span class="proj-photo-count">6 photos</span>
       </div>
     </div>
+
+
+    <!-- New Residential Projects -->
+    <div class="proj-card" data-type="Addition" onclick="openProject('fraser_add')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Fraser Addition" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Addition</span>
+          <span class="proj-loc">Fraser, CO</span>
+        </div>
+        <h2 class="proj-card-name">Fraser Addition</h2>
+        <p class="proj-card-desc">A home addition on Little Pierre Ave expanding living space in the Fraser Valley. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+    <div class="proj-card" data-type="Renovation" onclick="openProject('fraser_ren')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Fraser Renovation" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Renovation</span>
+          <span class="proj-loc">Fraser, CO</span>
+        </div>
+        <h2 class="proj-card-name">Fraser Renovation</h2>
+        <p class="proj-card-desc">A full home renovation on Little Pierre Ave — the second FHG project in this Fraser neighborhood. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+    <div class="proj-card" data-type="Renovation" onclick="openProject('gv_access')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Greenwood Village Renovation" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Renovation</span>
+          <span class="proj-loc">Greenwood Village, CO</span>
+        </div>
+        <h2 class="proj-card-name">Greenwood Village Renovation</h2>
+        <p class="proj-card-desc">An accessibility-focused renovation bringing thoughtful modifications and premium finishes to a Greenwood Village home. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+    <div class="proj-card" data-type="Renovation" onclick="openProject('cherry_bath')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Cherry Hills Bathroom" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Renovation</span>
+          <span class="proj-loc">Cherry Hills Village, CO</span>
+        </div>
+        <h2 class="proj-card-name">Cherry Hills Bathroom</h2>
+        <p class="proj-card-desc">A luxury bathroom renovation in Cherry Hills Village. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+
+    <!-- Commercial Projects -->
+    <div class="proj-card" data-type="Commercial" onclick="openProject('cherry_valley')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Cherry Valley Event Venue" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Commercial</span>
+          <span class="proj-loc">Colorado</span>
+        </div>
+        <h2 class="proj-card-name">Cherry Valley Event Venue</h2>
+        <p class="proj-card-desc">Commercial renovation of an event venue space. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+    <div class="proj-card" data-type="Commercial" onclick="openProject('blake_ti')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Blake St TI — Velocity Work" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Commercial</span>
+          <span class="proj-loc">Denver, CO</span>
+        </div>
+        <h2 class="proj-card-name">Blake St TI — Velocity Work</h2>
+        <p class="proj-card-desc">Tenant improvement build-out for Velocity Work on Blake Street, Denver. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+    <div class="proj-card" data-type="Commercial" onclick="openProject('clarkson_brick')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Clarkson St — Brick Repair" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Commercial</span>
+          <span class="proj-loc">Denver, CO</span>
+        </div>
+        <h2 class="proj-card-name">Clarkson St — Brick Repair</h2>
+        <p class="proj-card-desc">Structural brick repair and restoration on Clarkson Street. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+    <div class="proj-card" data-type="Commercial" onclick="openProject('uplift_temp')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Colorado Uplift — Temp Space" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Commercial</span>
+          <span class="proj-loc">Denver, CO</span>
+        </div>
+        <h2 class="proj-card-name">Colorado Uplift — Temp Space</h2>
+        <p class="proj-card-desc">Temporary space build-out for Colorado Uplift. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+    <div class="proj-card" data-type="Commercial" onclick="openProject('uplift_p1')">
+      <div class="proj-card-img">
+        <img src="images/residential/cover-cherry.jpg" alt="Colorado Uplift — Phase 1" loading="lazy">
+        <div class="proj-card-overlay"><span class="proj-card-cta">View Project →</span></div>
+      </div>
+      <div class="proj-card-info">
+        <div class="proj-card-meta">
+          <span class="proj-type">Commercial</span>
+          <span class="proj-loc">Denver, CO</span>
+        </div>
+        <h2 class="proj-card-name">Colorado Uplift — Phase 1</h2>
+        <p class="proj-card-desc">Phase 1 of the Colorado Uplift renovation — currently in progress. Photos and full description coming soon.</p>
+        <span class="proj-photo-count">Photos coming soon</span>
+      </div>
+    </div>
+
   </div>
 </div>
 
